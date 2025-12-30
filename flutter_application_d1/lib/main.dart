@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme:ThemeData(
-        brightness: Brightness.dark,
+        brightness: Brightness.light,
         appBarTheme: AppBarTheme(
           backgroundColor: Colors.deepPurple,
         )
