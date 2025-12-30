@@ -14,8 +14,16 @@ class Container_Sized extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Container and Size Box pintos'),),
-      body: Center(),
+      appBar: AppBar(title: Text('Container and Size Box'),),
+      body: 
+      
+      Center(
+        child: SizedBox(
+          height: 50,
+          width: 100,
+          child: Text("Hello World!"),
+        ),
+      ),
     );
   }
 }
