@@ -17,12 +17,14 @@ class RowsCols extends StatelessWidget {
         width: w,
         color: Colors.amber.shade200,
         child:
-          Column(children: [
-            Container(height: 60, width: 60, color: Colors.green.shade100,),
-            Container(height: 60, width: 60, color: Colors.green.shade200,),
-            Container(height: 60, width: 60, color: Colors.green.shade300,),
-            Container(height: 60, width: 60, color: Colors.green.shade400,),
-            Container(height: 60, width: 60, color: Colors.green.shade500,),
+          Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Container(height: 60, width: 60, color: Colors.green.shade100,),
+              Container(height: 60, width: 60, color: Colors.green.shade200,),
+              Container(height: 60, width: 60, color: Colors.green.shade300,),
+              Container(height: 60, width: 60, color: Colors.green.shade400,),
+              Container(height: 60, width: 60, color: Colors.green.shade500,),
           ],)
         // Wrap(
         //   //for space overlaping issue we can use wrap ,but wrap does not have main or axis allignment. 
