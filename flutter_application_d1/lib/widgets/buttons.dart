@@ -25,6 +25,11 @@ class Buttons extends StatelessWidget {
               child: Text("Press Me", style: TextStyle(fontSize: 20,)),
               onPressed: () {},
             ),
+            ElevatedButton(
+              onPressed:(){
+              print("Like");
+            },child: Text("See Magic",
+            style: TextStyle(fontSize: 20),))
           ],
         ),
       ),
@@ -35,3 +40,19 @@ class Buttons extends StatelessWidget {
 
 
 // We use WidgetStateProperty because a button is not always in one state.
+
+// A button can be:
+
+// normal
+
+// pressed
+
+// hovered (web/desktop)
+
+// focused
+
+// disabled
+
+// Each of these states can need different values for color, padding, elevation, shape, etc.
+
+// WidgetStateProperty lets Flutter decide the correct value based on the current state.
