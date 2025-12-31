@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_d1/widgets/container_sized.dart';
+import 'package:flutter_application_d1/widgets/rows-cols.dart';
 
 void main()=>runApp(new MyApp());
 
@@ -12,12 +13,12 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme:ThemeData(
-        brightness: Brightness.light,
+        brightness: Brightness.dark,
         appBarTheme: AppBarTheme(
           backgroundColor: Colors.deepPurple,
         )
       ) ,
-      home: Container_Sized(),
+      home: RowsCols(),
     );
   }
 }

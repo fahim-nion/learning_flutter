@@ -31,7 +31,10 @@ class Container_Sized extends StatelessWidget {
           ),
           child: Center(
             child: Container(
-              color: Colors.redAccent,
+              decoration: BoxDecoration(
+                color: const Color.fromARGB(255, 13, 33, 88),
+                borderRadius: BorderRadius.only(topRight: Radius.circular(15),bottomLeft: Radius.circular(15),bottomRight: Radius.circular(15)),
+              ),
             )
             // Text(
             //   "Hello!!",
