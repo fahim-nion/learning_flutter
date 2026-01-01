@@ -9,7 +9,6 @@ class ListGrid extends StatelessWidget {
   };
 
   @override
-  
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
@@ -32,15 +31,19 @@ class ListGrid extends StatelessWidget {
         //   },
         // ),
 
-        child:
-          GridView.builder(
-            itemCount: fruits.length,
-            gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
-            itemBuilder: (context, index) {
-              return Card(
-                child: Center(child: Text(fruits[index])),
+        child: GridView.builder(
+          itemCount: fruits.length,
+          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+            crossAxisCount: 2,
           ),
-        } ,
+          itemBuilder: (context, index) {
+            return Card(
+              child: Center(
+                child: Text(fruits[index]),
+              ),
+            );
+          },
+        ),
       ),
     );
   }
