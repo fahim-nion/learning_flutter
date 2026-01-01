@@ -19,7 +19,43 @@ class ListGrid extends StatelessWidget {
                 title: Text("Orange"),
                 subtitle: Text("Abdul ate this fruit"),
               ),
-            )
+            ),
+            Card(
+              child: ListTile(
+                title: Text("Orange"),
+                subtitle: Text("Abdul ate this fruit"),
+              ),
+            ),
+            Card(
+              child: ListTile(
+                title: Text("Orange"),
+                subtitle: Text("Abdul ate this fruit"),
+              ),
+            ),
+            Card(
+              child: ListTile(
+                title: Text("Orange"),
+                subtitle: Text("Abdul ate this fruit"),
+              ),
+            ),
+            Card(
+              child: ListTile(
+                title: Text("Orange"),
+                subtitle: Text("Abdul ate this fruit"),
+              ),
+            ),
+            Card(
+              child: ListTile(
+                title: Text("Orange"),
+                subtitle: Text("Abdul ate this fruit"),
+              ),
+            ),
+            Card(
+              child: ListTile(
+                title: Text("Orange"),
+                subtitle: Text("Abdul ate this fruit"),
+              ),
+            ),
           ],
         ),
       ),
