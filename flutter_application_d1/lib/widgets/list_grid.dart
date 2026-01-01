@@ -6,7 +6,10 @@ class ListGrid extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-
+      appBar: AppBar(
+        title: Text("List and Grid"),
+        backgroundColor: Colors.green.shade400,
+      ),
     );
   }
 }
