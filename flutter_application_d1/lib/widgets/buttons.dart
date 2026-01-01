@@ -25,11 +25,21 @@ class Buttons extends StatelessWidget {
               child: Text("Press Me", style: TextStyle(fontSize: 20,)),
               onPressed: () {},
             ),
-            ElevatedButton(
-              onPressed:(){
-              print("Like");
-            },child: Text("See Magic",
-            style: TextStyle(fontSize: 20),))
+            SizedBox(height: 20,),
+            Container(
+              width: 200,
+              height: 70,
+              child: ElevatedButton(
+                style: ButtonStyle(
+                  shape: WidgetStatePropertyAll(RoundedRectangleBorder(borderRadius: BorderRadius.circular(10))),
+                  foregroundColor: WidgetStatePropertyAll(const Color.fromARGB(255, 65, 3, 75)),
+                  backgroundColor: WidgetStatePropertyAll(const Color.fromARGB(255, 141, 242, 255))
+                ),
+                onPressed:(){
+                print("Like");
+              },child: Text("See Magic",
+              style: TextStyle(fontSize: 20),)),
+            )
           ],
         ),
       ),
@@ -56,3 +66,5 @@ class Buttons extends StatelessWidget {
 // Each of these states can need different values for color, padding, elevation, shape, etc.
 
 // WidgetStateProperty lets Flutter decide the correct value based on the current state.
+
+//elevated button does not have normal width and height property, to achieve that we can wrap it with a container
