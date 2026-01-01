@@ -9,6 +9,19 @@ class ListGrid extends StatelessWidget {
       appBar: AppBar(
         title: Text("List and Grid"),
         backgroundColor: Colors.green.shade400,
+        elevation: 8,
+      ),
+      body: Container(
+        child: ListView(
+          children: [
+            Card(
+              child: ListTile(
+                title: Text("Orange"),
+                subtitle: Text("Abdul ate this fruit"),
+              ),
+            )
+          ],
+        ),
       ),
     );
   }
