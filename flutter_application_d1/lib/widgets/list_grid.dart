@@ -32,9 +32,15 @@ class ListGrid extends StatelessWidget {
         //   },
         // ),
 
-        child: GridView(gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-          crossAxisCount: 2)
+        child:
+          GridView.builder(
+            itemCount: fruits.length,
+            gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
+            itemBuilder: (context, index) {
+              return Card(
+                child: Center(child: Text(fruits[index])),
           ),
+        } ,
       ),
     );
   }
@@ -141,3 +147,53 @@ class ListGrid extends StatelessWidget {
             
             
             */
+
+
+            //GridView
+
+            /*
+
+            GridView(gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+          crossAxisCount: 3,
+          crossAxisSpacing: 20,
+          mainAxisSpacing: 10,
+          childAspectRatio: 2/3,
+          ),
+          children: [
+            Card(
+              child: Center(child: Text("Orange")),
+            ),
+            Card(
+              child: Center(child: Text("Orange")),
+            ),
+            Card(
+              child: Center(child: Text("Orange")),
+            ),
+            Card(
+              child: Center(child: Text("Orange")),
+            ),
+            Card(
+              child: Center(child: Text("Orange")),
+            ),
+            Card(
+              child: Center(child: Text("Orange")),
+            ),
+            Card(
+              child: Center(child: Text("Orange")),
+            ),
+            Card(
+              child: Center(child: Text("Orange")),
+            ),
+            Card(
+              child: Center(child: Text("Orange")),
+            ),
+            Card(
+              child: Center(child: Text("Orange")),
+            ),
+            Card(
+              child: Center(child: Text("Orange")),
+            ),
+          ],
+          ),
+
+          */
